@@ -29,7 +29,7 @@
           type: 'pie',
           data: inventoryData,
           options: {
-            responsive: true,
+            responsive: false,
             plugins: {
               legend: {
                 position: 'bottom',
