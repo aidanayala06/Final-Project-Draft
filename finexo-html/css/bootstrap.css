@@ -35,6 +35,20 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.box {
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.box:hover img {
+  transform: scale(1.3);
+}
+
 *,
 *::before,
 *::after {
