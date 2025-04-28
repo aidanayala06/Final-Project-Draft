@@ -35,6 +35,17 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+#inventoryChart{
+  margin-top: 50px;
+  background: transparent;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px transparent;
+
+
+}
+
+
 .box {
   overflow: hidden;
 }

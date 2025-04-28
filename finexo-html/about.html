@@ -32,6 +32,8 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body class="sub_page">
@@ -121,6 +123,8 @@
             </p>
           </div>
         </div>
+        <h2><b>Inventory Chart</b></h2>
+        <canvas id="inventoryChart" width="400" height="400"></canvas>
       </div>
     </div>
   </section>
@@ -144,18 +148,14 @@
                   Reading, PA
                 </span>
               </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
                   Call 123-456-7890
                 </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
                   OnTrackforyou@OnTrack.com
                 </span>
-              </a>
             </div>
           </div>
           <div class="info_social">
@@ -197,17 +197,6 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
       </div>
     </div>
   </section>
@@ -224,6 +213,7 @@
     </div>
   </section>
   <!-- footer section -->
+
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

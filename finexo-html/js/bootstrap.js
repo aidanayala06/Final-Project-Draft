@@ -10,6 +10,51 @@
 }(this, function (exports, $, Popper) {
   'use strict';
 
+  fetch('js/data.json')
+      .then(response => response.json())
+      .then(data => {
+        const inventoryData = {
+          labels: Object.keys(data.inventory),
+          datasets: [{
+            label: 'Available Stock',
+            data: Object.values(data.inventory),
+            backgroundColor: ['#000080', '#191970', '#002366', '#1D2951', '#003153', '#0F52BA'],
+            borderColor: '#333',
+            borderWidth: 1
+          }]
+        };
+
+        const ctx = document.getElementById('inventoryChart').getContext('2d');
+        new Chart(ctx, {
+          type: 'pie',
+          data: inventoryData,
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: {
+                  color: '#FFFFFF',
+                  font: {
+                    size: 25,
+                  }
+                }
+              },
+              tooltip: {
+                bodyFont: {
+                  size: 25
+                }
+              }
+            },
+          }
+        });
+      });
+
+
+
+
+
+
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
 
