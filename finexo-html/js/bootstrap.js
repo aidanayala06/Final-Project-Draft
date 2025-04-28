@@ -18,7 +18,7 @@
           datasets: [{
             label: 'Available Stock',
             data: Object.values(data.inventory),
-            backgroundColor: ['#000080', '#191970', '#002366', '#1D2951', '#003153', '#0F52BA'],
+            backgroundColor: ['#000080', '#191970', '#002366', '#1D2951', '#003153', '#0F52BA','#002147'],
             borderColor: '#333',
             borderWidth: 1
           }]
